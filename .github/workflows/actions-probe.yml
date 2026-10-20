@@ -1,0 +1,12 @@
+name: Actions probe
+
+on:
+  push:
+    paths:
+      - .github/workflows/actions-probe.yml
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Public repository Actions runner is available"
